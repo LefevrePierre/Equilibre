@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Équilibre - le Film</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container swiper-container-h">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" id="slide1" data-hash="sl1">
+                <img src="img/2.png" id="thibo" data-swiper-parallax="-1000">
+                <img src="img/typo.png" id="typo" data-swiper-parallax="-800">
+            </div>
+
+            <div class="swiper-slide" id="slide2" data-hash="sl2">
+                <div id="ovlay"> </div>
+                <div id="content2" data-swiper-parallax="-1000">
+                    <div data-depth="0.3" id="title2">synopsis</div>
+                    <div data-depth="0.2" id="synopsis">
+                        Angélique, une jeune femme sans histoires, se réveille au beau milieu d’un parc. Sur son tee-shirt, une tache de sang qu’elle ne peut expliquer. Désorientée, elle décide de rentrer chez elle, cherchant à comprendre ce qui lui est arrivé. Rapidement, elle reçoit un SMS d’un inconnu qui lui ordonne de fuir, faisant référence à un groupe d’individus qui la recherche. Cependant, les coups à sa porte lui indiquent qu’ils sont déjà là. Mais alors, qui sont ces personnes qui semblent lui vouloir du mal ? Qui est cet inconnu ? Mais surtout, que s’est il réellement passé ?
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide" id="slide3" data-hash="sl3">
+                <div id="vidbox">
+                    <video id="video" poster="img/posteryoutybe.png">
+                            <source src="video/lequilibre-teasermedium.mp4" type="video/mp4"> 
+                    </video>
+                    <div id="video-controls">
+                        <button type="button" id="play-pause"><img src="img/play-button.png"/></button>
+                        <button type="button" id="mute"><img src="img/volume.png"/></button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="full-screen"><img src="img/fullscreen.png"/></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide" id="slide4" data-hash="sl4">
+                <!-- nouveau slider dans le swiper -->
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="job rea"> réal </div>
+                            <div class="snap cont">
+                                <div class="portrait pe" id="real"></div>
+                            </div>
+                            <div class="desc" data-swiper-parallax="-300">
+                                <div class="who">
+                                    <span class="nb"> 01 </span>
+                                    <span class="name"> Camille Robin </span>
+                                </div>
+                                <div class="texte">
+                                     Passionné depuis tout petit par l'audiovisuel, Camille s'est imposé naturellement en tant que réalisateur dans le groupe. En amont du tournage, il s'est occupé du découpage technique, puis après avoir filmé à l'aide de son fidèle G7, il s'est occupé du montage du court-métrage en post-production.
+                                    <span class="role">Réalisateur et cadreur.</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="job scr"> scéna </div>
+                            <div class="snap cont snapv">
+                                <div class="portrait pe" id="script"></div>
+                            </div>
+                            <div class="desc cont descv" data-swiper-parallax="-300">
+                                <div class="who whov">
+                                    <span class="nb"> 02 </span>
+                                    <span class="name"> Florine Moreau </span>
+                                </div>
+                                <div class="texte">
+                                    Grande adepte de la lecture, de tous les genres, c'est son scénario qui est à la base du court-métrage. Elle s'est également occupée de l'organisation du casting, puis a été chargé de certains accessoires nécessaires au tournage. C'est grâce à ses précieuses notes de script que Camille a pu faire le tri des rush du film.
+                                    <span class="role">Scénariste, script et clapiste.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="job inge"> ingé son </div>
+                            <div class="snap cont">
+                                <div class="portrait pe" id="son"></div>
+                            </div>
+                            <div class="desc cont" data-swiper-parallax="-300">
+                                <div class="who">
+                                    <span class="nb"> 03 </span>
+                                    <span class="name"> Pierre Lefèvre </span>
+                                </div>
+                                <div class="texte"> D'ordinaire plutôt orienté vers le domaine du design, Pierre s'est illustré au découpage technique en amont du tournage. Par la suite, il a supervisé la prise de son, le bon déroulement de la post-production puis toute la promotion du court-métrage
+                                    <span class="role">Ingénieur son et cadreur.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="job inge"> ingé <span>lumière</span> </div>
+                            <div class="snap cont snapv">
+                                <div class="portrait pe" id="lum"></div>
+                            </div>
+                            <div class="desc cont descv" data-swiper-parallax="-300">
+                                <div class="who whov">
+                                    <span class="nb"> 04 </span>
+                                    <span class="name"> Saad Alami </span>
+                                </div>
+                                <div class="texte"> Provisoirement photographe et perchman, c'est à l'éclairage que les lumières de Saad ont brillé sur le tournage. En post-production, il a contribué à la création de l'emblème de Fall Production, ainsi qu'au bon fonctionnement du site internet.
+                                    <span class="role">Ingénieur lumière et cadreur.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="job ass"> assist réal </div>
+                            <div class="snap cont">
+                                <div class="portrait pe" id="assis"></div>
+                            </div>
+                            <div class="desc cont" data-swiper-parallax="-300">
+                                <div class="who">
+                                    <span class="nb"> 05 </span>
+                                    <span class="name"> Quentin Bouché </span>
+                                </div>
+                                <div class="texte"> Très polyvalent, Quentin s'est occupé à la fois de trouver les lieux, de faire à manger, de tendre la perche, de capturer du son, de jouer dans le film, puis de le monter. Il est toujours plein d'énergie, sauf le matin.
+                                    <span class="role">Assistant réalisateur, perchman et régisseur.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="job reg"> régie </div>
+                            <div class="snap cont snapv">
+                                <div class="portrait pe" id="regie"></div>
+                            </div>
+                            <div class="desc cont descv" data-swiper-parallax="-400">
+                                <div class="who whov">
+                                    <span class="nb"> 06 </span>
+                                    <span class="name"> Alicia Moreau </span>
+                                </div>
+                                <div class="texte">
+                                    Amatrice de photographie depuis quelques années, Alicia s'est munie de son appareil pour capturer certains moments du tournage. Avant cela, elle s'était occupé de trouver les lieux avec Quentin, ainsi que de planifier les jours de tournage. Sans être une cuisinière experte, elle s'est chargée de nourrir l'équipe pendant les 3 jours de tournage.
+                                    <span class="role">Photographe et régisseuse.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slidephoto">
+                            <div class="job photos"> photos </div>
+                            <div id="pictures">
+                                <div class="snap cont pics p1">
+                                    <div class="portrait pi" id="pic1"></div>
+                                </div>
+                                <div class="snap cont pics p2">
+                                    <div class="portrait pi" id="pic2"></div>
+                                </div>
+                                <div class="snap cont pics p3">
+                                    <div class="portrait pi" id="pic3"></div>
+                                </div>
+                            </div>
+                            <div id="picturesmobile">
+                                <div class="snapphot photo1">
+                                    <div class="portrait picspho" id="ppic1"></div>
+                                </div>
+                                <div class="snapphot photo2">
+                                    <div class="portrait picspho" id="ppic2"></div>
+                                </div>
+                                <div class="snapphot photo3">
+                                    <div class="portrait picspho" id="ppic3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div>
+                        <img id="arrow" class="over" title="Naviguez avec votre clavier" src="img/next.png" />
+                </div>
+            </div>
+            
+            <!-- Fin deuxieme swiper-->
+            
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-h">
+    </div>
+    <div class="navigation">
+        <div class="swiper-button-next swiper-button-white" style="height: 100px; right: 30px;">
+        </div>
+    </div>
+
+
+    <!--menu-->
+    <div class="menu over">
+        <!-- menu Toogle -->
+        <div class="main-header__toggle">
+            <!--
+            <a href="#main-header">
+-->
+            <img class="main-header__toggle-open" src="img/menu.png" width="30" />
+            <!--
+            </a>
+-->
+            <!--
+            <a href="#">
+-->
+            <img class="main-header__toggle-close" src="img/close.png" width="30" />
+            <!--
+</a>-->
+        </div>
+        <ul class="main-header__menu">
+            <li><a href="#sl1">Accueil</a></li>
+            <li><a href="#sl2">Synopsis</a></li>
+            <li><a href="#sl3">Teaser</a></li>
+            <li><a href="#sl4">Equipe et Photos</a></li>
+            <li class="dossier" target="_blank"> <a href="dl/Dossier%20de%20presse.pdf"  download="dl/Dossier%20de%20presse.pdf">Le dossier de presse</a></li>
+            <li class="social_mobil">
+
+                <div class="social_mobil_icon">
+                    <a  href="https://www.facebook.com/lequilibrelefilm/" target="_blank">
+                        <div class="icon" id="fb"></div>
+                    </a>
+                    <a  href="https://www.instagram.com/lequilibrelefilm/" target="_blank">
+                        <div class="icon" id="insta"></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC0m_WDJH59hyUhyEJImculg" target="_blank">
+                        <div class="icon" id="youtube"></div>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="social over">
+                    <a title="Retrouvez-nous sur facebook" href="https://www.facebook.com/lequilibrelefilm/" target="_blank">
+                        <div class="icon" id="fb"></div>
+                    </a>
+                    <a title="Suivez notre instagram" href="https://www.instagram.com/lequilibrelefilm/" target="_blank">
+                        <div class="icon" id="insta"></div>
+                    </a>
+                    <a title="Pour voir le film et plus !" href="https://www.youtube.com/channel/UC0m_WDJH59hyUhyEJImculg" target="_blank">
+                        <div class="icon" id="youtube"></div>
+                    </a>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
